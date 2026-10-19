@@ -6,6 +6,9 @@ import LinesView from "./LinesView";
 
 type Lang = "en" | "bn" | "both";
 
+// Teleprompter speed in pixels per tick (every 30ms). 0.35 is 65% slower than the old 1 px.
+const SPEED = 0.35;
+
 interface Props {
   day: number;
   done: boolean;
@@ -26,7 +29,13 @@ export default function Reader({ day, done, onToggle, onBack, onNav }: Props) {
   // Teleprompter: slow automatic scroll
   useEffect(() => {
     if (!auto) return;
-    const id = setInterval(() => window.scrollBy(0, 1), 30);
+    // Keep the exact position in `y`, because browsers round tiny scrollBy values to 0.
+    let y = window.scrollY;
+    const id = setInterval(() => {
+      if (Math.abs(window.scrollY - y) > 2) y = window.scrollY; // user scrolled by hand
+      y += SPEED;
+      window.scrollTo(0, y);
+    }, 30);
     return () => clearInterval(id);
   }, [auto]);
 
@@ -44,9 +53,9 @@ export default function Reader({ day, done, onToggle, onBack, onNav }: Props) {
     <main className="wrap">
       <div className="toolbar">
         <button className="btn" onClick={onBack}>ALL DAYS</button>
-        {(["en", "bn", "both"] as Lang[]).map((l) => (
+        {(["en", "both", "bn"] as Lang[]).map((l) => (
           <button key={l} className={`btn ${lang === l ? "on" : ""}`} onClick={() => setLang(l)}>
-            {l === "bn" ? "বাংলা" : l.toUpperCase()}
+            {l === "bn" ? "বাংলা" : l === "en" ? "ENGLISH" : "ENG + বাংলা"}
           </button>
         ))}
         <button className="btn" onClick={() => setSize((v) => Math.max(14, v - 2))} aria-label="Smaller text">A-</button>
