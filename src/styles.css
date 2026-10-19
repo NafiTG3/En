@@ -61,3 +61,10 @@ h1, h2, h3, .btn, .chip, .tile em, .wc, .meter span { font-family: "Space Mono",
 .wc.bad { background: var(--red); }
 @media (max-width: 480px) { .grid { grid-template-columns: repeat(2, 1fr); } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* Sentence pairs (English + Bangla meaning) */
+.pair { padding: 10px 0; border-bottom: 2px dashed var(--ink); }
+.pair:last-child { border-bottom: 0; }
+.l-en { margin: 0 0 6px; font-weight: 700; }
+.l-bn { margin: 0; padding: 6px 10px; background: #f3ecff; border-left: 5px solid var(--ink); font-family: "Hind Siliguri", system-ui, sans-serif; }
+.gloss { margin: 0 2px; padding: 0 6px; background: var(--yellow); border: 2px solid var(--ink); font-family: "Hind Siliguri", system-ui, sans-serif; font-weight: 600; font-size: .85em; }

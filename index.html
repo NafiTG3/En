@@ -9,6 +9,19 @@
   </head>
   <body>
     <div id="root"></div>
+    <noscript>Please enable JavaScript.</noscript>
+    <!-- Helpful message if the page is opened the wrong way (Live Server, file://, or unbuilt source) -->
+    <script>
+      setTimeout(function () {
+        var r = document.getElementById("root");
+        if (r && !r.children.length) {
+          r.innerHTML =
+            '<div style="font:16px/1.6 monospace;max-width:640px;margin:40px auto;padding:20px;border:3px solid #111;background:#ffd93d;box-shadow:5px 5px 0 #111">' +
+            "<b>App did not start.</b><br>This is a React + TypeScript project. Do not open it with Live Server or by double clicking index.html.<br><br>" +
+            "Local: run <b>npm install</b> then <b>npm run dev</b>.<br>GitHub Pages: Settings, Pages, Source must be <b>GitHub Actions</b>.</div>";
+        }
+      }, 1500);
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

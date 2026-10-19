@@ -1,11 +1,13 @@
 import type { Script } from "../types";
-import { countWords } from "../utils";
+import { scriptCounts } from "../utils";
+import { day02 } from "./days/day02";
 
 /**
  * HOW TO ADD A NEW DAY: add a key (the day number) with `en` and `bn` paragraphs.
  * Rule: every script must be 500 to 1500 words. The reader shows a red badge if it is below 500.
  */
 export const SCRIPTS: Record<number, Script> = {
+  2: day02,
   1: {
     en: [
       "Hello everyone, and thank you for being here. My name is Antonysrm Nafi, and I am the founder of Blockveil, a privacy-focused startup that I am building from Bangladesh. It is a real pleasure to meet you, and I would like to take a few minutes to tell you who I am and what I am working on.",
@@ -34,12 +36,10 @@ export const SCRIPTS: Record<number, Script> = {
   },
 };
 
-// Dev-only safety check: warns in the console if any script is outside 500 to 1500 words.
+// Dev-only safety check: warns in the console if a script has fewer than 500 or more than 1500 English words.
 if (import.meta.env.DEV) {
-  Object.entries(SCRIPTS).forEach(([day, s]) =>
-    (["en", "bn"] as const).forEach((l) => {
-      const n = countWords(s[l]);
-      if (n < 500 || n > 1500) console.warn(`Day ${day} (${l}) has ${n} words, expected 500 to 1500.`);
-    })
-  );
+  Object.entries(SCRIPTS).forEach(([day, s]) => {
+    const c = scriptCounts(s);
+    if (c.en < 500 || c.en > 1500) console.warn(`Day ${day} has ${c.en} English words, expected 500 to 1500.`);
+  });
 }

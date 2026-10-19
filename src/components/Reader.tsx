@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { TITLES } from "../data/days";
 import { SCRIPTS } from "../data/scripts";
 import { countWords } from "../utils";
+import LinesView from "./LinesView";
 
 type Lang = "en" | "bn" | "both";
 
@@ -58,7 +59,9 @@ export default function Reader({ day, done, onToggle, onBack, onNav }: Props) {
       <h1 className="title">DAY {day}<small>{TITLES[day - 1]}</small></h1>
 
       <div style={{ fontSize: size }}>
-        {s ? (
+        {s?.lines ? (
+          <LinesView lines={s.lines} lang={lang} />
+        ) : s?.en && s.bn ? (
           <>
             {lang !== "bn" && block("English", s.en, "en")}
             {lang !== "en" && block("বাংলা", s.bn, "bn")}
