@@ -2,6 +2,9 @@ import type { Script } from "../types";
 import { scriptCounts } from "../utils";
 import { day02 } from "./days/day02";
 import { day03 } from "./days/day03";
+import { day04 } from "./days/day04";
+import { day05 } from "./days/day05";
+import { day06 } from "./days/day06";
 
 /**
  * HOW TO ADD A NEW DAY: add a key (the day number) with `en` and `bn` paragraphs.
@@ -10,6 +13,9 @@ import { day03 } from "./days/day03";
 export const SCRIPTS: Record<number, Script> = {
   2: day02,
   3: day03,
+  4: day04,
+  5: day05,
+  6: day06,
   1: {
     en: [
       "Hello everyone, and thank you for being here. My name is Antonysrm Nafi, and I am the founder of Blockveil, a privacy-focused startup that I am building from Bangladesh. It is a real pleasure to meet you, and I would like to take a few minutes to tell you who I am and what I am working on.",
