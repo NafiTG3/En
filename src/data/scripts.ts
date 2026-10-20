@@ -15,6 +15,10 @@ import { day12 } from "./days/day12";
 import { day13 } from "./days/day13";
 import { day14 } from "./days/day14";
 import { day15 } from "./days/day15";
+import { day16 } from "./days/day16";
+import { day17 } from "./days/day17";
+import { day18 } from "./days/day18";
+import { day19 } from "./days/day19";
 
 /**
  * HOW TO ADD A NEW DAY: add a key (the day number) with `en` and `bn` paragraphs.
@@ -35,6 +39,10 @@ export const SCRIPTS: Record<number, Script> = {
   13: day13,
   14: day14,
   15: day15,
+  16: day16,
+  17: day17,
+  18: day18,
+  19: day19,
   1: day01,
 };
 
