@@ -13,8 +13,8 @@ interface Props {
 
 const LABELS: Record<View, string> = { all: "ALL", en: "ENGLISH", mix: "ENG + বাংলা" };
 
-// Teleprompter speed in pixels per tick (every 30ms). 0.35 is 65% slower than the old 1 px.
-const SPEED = 0.35;
+// Teleprompter speed in pixels per tick (every 30ms). 0.175 is 50% slower than the previous 0.35.
+const SPEED = 0.175;
 
 export default function Reader({ day, done, onToggle, onBack, onNav }: Props) {
   const [view, setView] = useState<View>("all");

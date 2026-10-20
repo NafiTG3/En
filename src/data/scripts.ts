@@ -6,6 +6,8 @@ import { day03 } from "./days/day03";
 import { day04 } from "./days/day04";
 import { day05 } from "./days/day05";
 import { day06 } from "./days/day06";
+import { day07 } from "./days/day07";
+import { day08 } from "./days/day08";
 
 /**
  * HOW TO ADD A NEW DAY: add a key (the day number) with `en` and `bn` paragraphs.
@@ -17,6 +19,8 @@ export const SCRIPTS: Record<number, Script> = {
   4: day04,
   5: day05,
   6: day06,
+  7: day07,
+  8: day08,
   1: day01,
 };
 
