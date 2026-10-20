@@ -39,6 +39,18 @@ import { day36 } from "./days/day36";
 import { day37 } from "./days/day37";
 import { day38 } from "./days/day38";
 import { day39 } from "./days/day39";
+import { day40 } from "./days/day40";
+import { day41 } from "./days/day41";
+import { day42 } from "./days/day42";
+import { day43 } from "./days/day43";
+import { day44 } from "./days/day44";
+import { day45 } from "./days/day45";
+import { day46 } from "./days/day46";
+import { day47 } from "./days/day47";
+import { day48 } from "./days/day48";
+import { day49 } from "./days/day49";
+import { day50 } from "./days/day50";
+import { day51 } from "./days/day51";
 
 /**
  * HOW TO ADD A NEW DAY: add a key (the day number) with `en` and `bn` paragraphs.
@@ -83,6 +95,18 @@ export const SCRIPTS: Record<number, Script> = {
   37: day37,
   38: day38,
   39: day39,
+  40: day40,
+  41: day41,
+  42: day42,
+  43: day43,
+  44: day44,
+  45: day45,
+  46: day46,
+  47: day47,
+  48: day48,
+  49: day49,
+  50: day50,
+  51: day51,
   1: day01,
 };
 
