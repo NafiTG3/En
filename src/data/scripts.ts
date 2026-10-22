@@ -83,6 +83,14 @@ import { day80 } from "./days/day80";
 import { day81 } from "./days/day81";
 import { day82 } from "./days/day82";
 import { day83 } from "./days/day83";
+import { day84 } from "./days/day84";
+import { day85 } from "./days/day85";
+import { day86 } from "./days/day86";
+import { day87 } from "./days/day87";
+import { day88 } from "./days/day88";
+import { day89 } from "./days/day89";
+import { day90 } from "./days/day90";
+import { day91 } from "./days/day91";
 
 /**
  * HOW TO ADD A NEW DAY: add a key (the day number) with `en` and `bn` paragraphs.
@@ -171,6 +179,14 @@ export const SCRIPTS: Record<number, Script> = {
   81: day81,
   82: day82,
   83: day83,
+  84: day84,
+  85: day85,
+  86: day86,
+  87: day87,
+  88: day88,
+  89: day89,
+  90: day90,
+  91: day91,
   1: day01,
 };
 
