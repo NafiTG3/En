@@ -1,0 +1,38 @@
+import type { Script } from "../../types";
+
+/** Day 68: IELTS Part 2, Describe an Achievement. Format: [English with (meaning) hints, full Bangla sentence]. */
+export const day68: Script = {
+  lines: [
+    ["Hello(হ্যালো) everyone, today we continue IELTS speaking Part Two(পার্ট টু), and the topic is describing an achievement(অর্জন).", "সবাইকে হ্যালো, আজ আমরা আইইএলটিএস স্পিকিং পার্ট টু চালিয়ে যাচ্ছি, আর বিষয় হলো একটি অর্জন বর্ণনা করা।"],
+    ["An achievement means something that you are proud of, which you worked hard to reach, and it does not need to be very big.", "অর্জন মানে এমন কিছু যা নিয়ে আপনি গর্বিত, যা পৌঁছাতে আপনি কঠোর পরিশ্রম করেছেন, আর এটি খুব বড় হতে হবে না।"],
+    ["A typical card says, describe something that you achieved, and you should say what it was, when you did it, how you did it, and explain why you felt proud.", "একটি সাধারণ কার্ড বলে, আপনার অর্জন করা কিছু বর্ণনা করুন, আর আপনার বলা উচিত এটি কী ছিল, কখন করেছেন, কীভাবে করেছেন, আর ব্যাখ্যা করুন আপনি কেন গর্বিত বোধ করেছেন।"],
+    ["Remember the rules of Part Two, which are one minute of preparation, with keywords only, and then one to two minutes of speaking.", "পার্ট টুর নিয়ম মনে রাখুন, যা শুধু মূল শব্দসহ এক মিনিটের প্রস্তুতি, আর তারপর এক থেকে দুই মিনিট কথা বলা।"],
+    ["My keywords for this card could be, first website, three months, many mistakes, finished, and proud.", "এই কার্ডের জন্য আমার মূল শব্দ হতে পারে, প্রথম ওয়েবসাইট, তিন মাস, অনেক ভুল, শেষ করা এবং গর্বিত।"],
+    ["Now let me give you a sample(নমুনা) answer, and please remember that the story is an example, and you must tell your own real achievement.", "এবার একটি নমুনা উত্তর দিই, আর অনুগ্রহ করে মনে রাখবেন গল্পটি একটি উদাহরণ, আর আপনাকে আপনার নিজের আসল অর্জন বলতে হবে।"],
+    ["I would like to talk about the time when I finished building my first complete website, which I consider a big personal achievement.", "আমি সেই সময়ের কথা বলতে চাই যখন আমি আমার প্রথম পূর্ণ ওয়েবসাইট বানানো শেষ করেছি, যা আমি একটি বড় ব্যক্তিগত অর্জন মনে করি।"],
+    ["I did this about a year ago, after I had studied the basics of web development for several months, mostly by myself, using online lessons.", "আমি এটি প্রায় এক বছর আগে করেছি, কয়েক মাস ধরে ওয়েব ডেভেলপমেন্টের মূল বিষয়গুলো পড়ার পর, বেশিরভাগ নিজে নিজে, অনলাইন পাঠ ব্যবহার করে।"],
+    ["At the beginning, I could barely make a simple page, and every small mistake in the code seemed like a huge problem.", "শুরুতে আমি কোনোমতে একটি সাধারণ পেজ বানাতে পারতাম, আর কোডের প্রতিটি ছোট ভুল একটি বিশাল সমস্যার মতো মনে হতো।"],
+    ["But I decided to practice every day, and I divided the project into small steps, such as the design, the main page, and the contact form.", "কিন্তু আমি প্রতিদিন অনুশীলন করার সিদ্ধান্ত নিলাম, আর প্রজেক্টটিকে ছোট ধাপে ভাগ করলাম, যেমন ডিজাইন, মূল পেজ এবং যোগাযোগ ফর্ম।"],
+    ["Whenever I got stuck, I searched for solutions, I asked questions in online communities, and I tried again the next day.", "যখনই আমি আটকে যেতাম, আমি সমাধান খুঁজতাম, অনলাইন কমিউনিটিতে প্রশ্ন করতাম, আর পরের দিন আবার চেষ্টা করতাম।"],
+    ["It took me about three months to finish, and when I finally saw the website working on my phone, I felt an enormous sense of pride.", "শেষ করতে আমার প্রায় তিন মাস লেগেছিল, আর যখন অবশেষে আমি ওয়েবসাইটটি আমার ফোনে কাজ করতে দেখলাম, আমি একটি অসাধারণ গর্ব অনুভব করলাম।"],
+    ["I felt proud, not because the website was perfect, because it was not, but because I proved to myself that I can learn difficult things if I stay patient.", "আমি গর্বিত বোধ করেছিলাম, ওয়েবসাইটটি নিখুঁত ছিল বলে নয়, কারণ এটি ছিল না, বরং আমি নিজের কাছে প্রমাণ করেছিলাম যে ধৈর্য ধরলে আমি কঠিন জিনিস শিখতে পারি।"],
+    ["This achievement changed my attitude, because before it, I often doubted myself, but after it, I believed that I could build bigger projects.", "এই অর্জন আমার মনোভাব বদলে দিয়েছিল, কারণ এর আগে আমি প্রায়ই নিজেকে সন্দেহ করতাম, কিন্তু এর পরে আমি বিশ্বাস করেছিলাম আমি আরও বড় প্রজেক্ট বানাতে পারি।"],
+    ["Today, I use the same method for every new challenge, which is to break it into small steps, and to move forward a little every day.", "আজ আমি প্রতিটি নতুন চ্যালেঞ্জের জন্য একই পদ্ধতি ব্যবহার করি, তা হলো এটিকে ছোট ধাপে ভাগ করা, আর প্রতিদিন একটু একটু এগিয়ে যাওয়া।"],
+    ["Notice the past perfect, after I had studied, which shows that one action happened before another action in the past.", "অতীত সম্পন্ন কাল লক্ষ্য করুন, after I had studied, যা দেখায় অতীতে একটি কাজ অন্য একটি কাজের আগে ঘটেছিল।"],
+    ["Also notice the contrast, not because it was perfect, but because I proved to myself, which is a very natural and advanced structure.", "বৈপরীত্যও লক্ষ্য করুন, not because it was perfect, but because I proved to myself, যা একটি অত্যন্ত স্বাভাবিক ও উন্নত কাঠামো।"],
+    ["Now let me teach you useful vocabulary(শব্দভান্ডার) for talking about achievements.", "এবার অর্জন নিয়ে কথা বলার জন্য কাজের শব্দভান্ডার শেখাই।"],
+    ["You can use verbs such as, accomplish, overcome, achieve, and complete, and they sound stronger than the simple word, do.", "আপনি accomplish, overcome, achieve এবং complete এর মতো ক্রিয়া ব্যবহার করতে পারেন, আর সেগুলো সাধারণ শব্দ do এর চেয়ে শক্তিশালী শোনায়।"],
+    ["You can use phrases such as, it was a turning point, I stepped out of my comfort zone, and it was a real confidence booster.", "আপনি it was a turning point, I stepped out of my comfort zone এবং it was a real confidence booster এর মতো বাক্যাংশ ব্যবহার করতে পারেন।"],
+    ["You can describe your feelings with words such as, thrilled, relieved, proud, and fulfilled.", "আপনি thrilled, relieved, proud এবং fulfilled এর মতো শব্দ দিয়ে আপনার অনুভূতি বর্ণনা করতে পারেন।"],
+    ["Now let me share some tips(পরামর্শ) for this topic.", "এবার এই বিষয়ের কিছু পরামর্শ শেয়ার করি।"],
+    ["Tip one: choose a small and real achievement that you can describe in detail, because a simple honest story is better than a dramatic invented story.", "পরামর্শ এক: এমন একটি ছোট ও আসল অর্জন বেছে নিন যা আপনি বিস্তারিত বর্ণনা করতে পারেন, কারণ একটি সহজ সৎ গল্প একটি নাটকীয় বানানো গল্পের চেয়ে ভালো।"],
+    ["Tip two: include the difficulty, because a story without a problem is not interesting, and the problem shows your language range.", "পরামর্শ দুই: কঠিনতা অন্তর্ভুক্ত করুন, কারণ সমস্যা ছাড়া গল্প আকর্ষণীয় নয়, আর সমস্যা আপনার ভাষার পরিসর দেখায়।"],
+    ["Tip three: finish with a reflection, such as what you learned, and how it changed you, because it gives a strong ending.", "পরামর্শ তিন: একটি প্রতিফলন দিয়ে শেষ করুন, যেমন আপনি কী শিখেছেন, আর এটি আপনাকে কীভাবে বদলেছে, কারণ এটি একটি শক্তিশালী সমাপ্তি দেয়।"],
+    ["Now here are some mistakes(ভুল) to avoid.", "এবার এড়িয়ে চলার মতো কিছু ভুল।"],
+    ["Do not use only the simple past tense for the whole talk, because the examiner wants to see a range of grammar.", "পুরো বক্তব্যে শুধু সাধারণ অতীত কাল ব্যবহার করবেন না, কারণ পরীক্ষক ব্যাকরণের একটি পরিসর দেখতে চান।"],
+    ["Do not stop after one minute, and if you finish your points early, add more details, feelings, or a small example.", "এক মিনিট পরে থামবেন না, আর আপনার পয়েন্টগুলো আগে শেষ হলে আরও বিবরণ, অনুভূতি বা একটি ছোট উদাহরণ যোগ করুন।"],
+    ["To practice, think about three real achievements from your life, and record a two minute talk for each one, and compare the recordings.", "অনুশীলনের জন্য আপনার জীবনের তিনটি আসল অর্জনের কথা ভাবুন, আর প্রতিটির জন্য দুই মিনিটের একটি বক্তব্য রেকর্ড করুন, এবং রেকর্ডিংগুলো তুলনা করুন।"],
+    ["I hope this lesson helps you tell your story of success with pride and confidence(আত্মবিশ্বাস).", "আমি আশা করি এই পাঠ আপনাকে গর্ব ও আত্মবিশ্বাসের সাথে আপনার সাফল্যের গল্প বলতে সাহায্য করবে।"],
+    ["Thank you for listening, and see you in the next lesson.", "শোনার জন্য ধন্যবাদ, আর পরের পাঠে দেখা হবে।"],
+  ],
+};

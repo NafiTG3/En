@@ -1,0 +1,70 @@
+/* Retro Neubrutalism: thick borders, hard shadows, flat bright colors */
+:root {
+  --bg: #fff6df; --ink: #111; --card: #fff; --yellow: #ffd93d; --green: #95e06c; --red: #ff5d5d;
+  --b: 3px solid var(--ink); --sh: 5px 5px 0 var(--ink);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.6 "Space Grotesk", system-ui, sans-serif;
+  background-image: radial-gradient(#0002 1.2px, transparent 1.2px); background-size: 18px 18px;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
+h1, h2, h3, .btn, .chip, .tile em, .wc, .meter span { font-family: "Space Mono", monospace; text-transform: uppercase; }
+
+.hero { background: var(--yellow); border: var(--b); box-shadow: var(--sh); padding: 20px; margin-bottom: 20px; }
+.hero h1 { margin: 0 0 8px; font-size: clamp(1.6rem, 6vw, 2.6rem); line-height: 1.1; }
+.hero p { margin: 0 0 14px; font-weight: 500; }
+.meter { position: relative; height: 34px; background: #fff; border: var(--b); }
+.meter i { position: absolute; inset: 0 auto 0 0; background: var(--green); border-right: var(--b); }
+.meter span { position: relative; display: block; text-align: center; line-height: 28px; font-weight: 700; font-size: .85rem; }
+
+.search { width: 100%; padding: 12px 14px; font: inherit; border: var(--b); box-shadow: var(--sh); background: #fff; margin-bottom: 16px; }
+.search:focus-visible, .btn:focus-visible, .chip:focus-visible, .tile:focus-visible { outline: 4px solid #1d4ed8; outline-offset: 2px; }
+
+.filters { display: flex; gap: 10px; overflow-x: auto; padding: 2px 2px 14px; }
+.chip, .btn {
+  flex: none; padding: 9px 14px; border: var(--b); background: #fff; color: var(--ink);
+  font-weight: 700; font-size: .8rem; cursor: pointer; box-shadow: 3px 3px 0 var(--ink);
+  transition: transform .08s, box-shadow .08s;
+}
+.chip:hover, .btn:hover:not(:disabled), .tile:hover { transform: translate(-2px, -2px); }
+.chip:active, .btn:active:not(:disabled), .tile:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--ink); }
+.chip.on { box-shadow: 0 0 0 var(--ink); transform: translate(3px, 3px); text-decoration: underline; }
+.btn.on { background: var(--yellow); }
+.btn.pri { background: #6bcbff; }
+.btn.pri.on { background: var(--green); }
+.btn:disabled { opacity: .4; cursor: not-allowed; }
+
+.phase { margin: 26px 0 12px; padding: 10px 14px; border: var(--b); box-shadow: var(--sh); font-size: 1.05rem; }
+.phase small { font-weight: 400; margin-left: 8px; font-size: .75rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+.tile {
+  display: flex; flex-direction: column; gap: 6px; text-align: left; padding: 12px; min-height: 130px;
+  border: var(--b); background: var(--card); box-shadow: var(--sh); cursor: pointer; font: inherit; color: inherit;
+  transition: transform .08s, box-shadow .08s;
+}
+.tile b { font: 700 1.8rem/1 "Space Mono", monospace; }
+.tile span { font-weight: 700; font-size: .9rem; line-height: 1.25; flex: 1; }
+.tile em { font-style: normal; font-size: .7rem; font-weight: 700; }
+.tile.soon { background: #e9e4d4; color: #555; border-style: dashed; }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; position: sticky; top: 0; padding: 10px 0; background: var(--bg); z-index: 5; }
+.toolbar.end { position: static; margin-top: 20px; }
+.title { margin: 14px 0; font-size: clamp(1.8rem, 7vw, 3rem); line-height: 1; }
+.title small { display: block; margin-top: 8px; font-size: .45em; background: var(--yellow); border: var(--b); padding: 6px 10px; width: fit-content; max-width: 100%; }
+.card { background: #fff; border: var(--b); box-shadow: var(--sh); padding: 16px 18px; margin-bottom: 22px; }
+.card h3 { margin: 0 0 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: .9rem; }
+.card.bn { font-family: "Hind Siliguri", system-ui, sans-serif; background: #f3ecff; }
+.card.bn h3 { font-family: "Hind Siliguri", system-ui, sans-serif; text-transform: none; }
+.wc { font-size: .7rem; padding: 3px 8px; border: 2px solid var(--ink); background: var(--green); }
+.wc.bad { background: var(--red); }
+@media (max-width: 480px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* Sentence pairs (English + Bangla meaning) */
+.pair { padding: 10px 0; border-bottom: 2px dashed var(--ink); }
+.pair:last-child { border-bottom: 0; }
+.l-en { margin: 0 0 6px; font-weight: 700; }
+.l-bn { margin: 0; padding: 6px 10px; background: #f3ecff; border-left: 5px solid var(--ink); font-family: "Hind Siliguri", system-ui, sans-serif; }
+.gloss { margin: 0 2px; padding: 0 6px; background: var(--yellow); border: 2px solid var(--ink); font-family: "Hind Siliguri", system-ui, sans-serif; font-weight: 600; font-size: .85em; }
